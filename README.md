@@ -3,8 +3,8 @@ Gaming ladder software wrote early in my development career traneferred with all
 
 .. code-block::
 
-THE OFFICIAL DOWNLOAD SITE FOR THIS PROGRAM IS HTTP://WWW.SKILLPILL.COM
-* Edit: Visit archive.org to view what SkillPill was all about before the domaion was transferred to its current holder.
+   THE OFFICIAL DOWNLOAD SITE FOR THIS PROGRAM IS HTTP://WWW.SKILLPILL.COM
+   * Edit: Visit archive.org to view what SkillPill was all about before the domaion was transferred to its current holder.
 
 WE DO NOT HAVE ANY CONTENT MIRRORS SO IF YOU GOT THIS PROGRAM FROM ANYWHERE OTHER THAN FROM THE ABOVE URL, THERE'S NO GUARANTEE IT WILL WORK. EVEN IF YOU *DID* DOWNLOAD THIS FROM OUR SITE, WE *STILL* DON'T OFFER ANY GUARANTEES ON IT NOR ACCEPT ANY LIABILITY WHEN YOU CRASH YOUR SERVER OR SMOKE SOMETHING WHILE FOOLING AROUND WHERE YOU DON'T BELONG (ASSUMING YOU AREN'T THE SYS ADMIN).
 
