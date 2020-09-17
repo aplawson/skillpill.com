@@ -5,17 +5,21 @@ THE OFFICIAL DOWNLOAD SITE FOR THIS PROGRAM IS HTTP://WWW.SKILLPILL.COM
 * Edit: Visit archive.org to view what SkillPill was all about before the domaion was transferred to its current holder.
 
 ```
-WE DO NOT HAVE ANY CONTENT MIRRORS SO IF YOU GOT THIS PROGRAM FROM ANYWHERE OTHER THAN FROM THE ABOVE URL, THERE'S NO GUARANTEE IT WILL WORK. EVEN IF YOU *DID* DOWNLOAD THIS FROM OUR SITE, WE *STILL* DON'T OFFER ANY GUARANTEES ON IT NOR ACCEPT ANY LIABILITY WHEN YOU CRASH YOUR SERVER OR SMOKE SOMETHING WHILE FOOLING AROUND WHERE YOU DON'T BELONG (ASSUMING YOU AREN'T THE SYS ADMIN).
+WE DO NOT HAVE ANY CONTENT MIRRORS SO IF YOU GOT THIS PROGRAM FROM ANYWHERE OTHER THAN FROM THE ABOVE URL, THERE'S NO GUARANTEE IT
+WILL WORK. EVEN IF YOU *DID* DOWNLOAD THIS FROM OUR SITE, WE *STILL* DON'T OFFER ANY GUARANTEES ON IT NOR ACCEPT ANY LIABILITY WHEN
+YOU CRASH YOUR SERVER OR SMOKE SOMETHING WHILE FOOLING AROUND WHERE YOU DON'T BELONG (ASSUMING YOU AREN'T THE SYS ADMIN).
 
 I MIGHT HAVE TIME TO HELP. EMAIL ADAM@SKILLPILL.COM WITH ANY QUESTIONS.
-NO GUARANTEES I'LL BE ABLE TO REPLY TO YOUR EMAIL OR EVEN HAVE ANY USEFUL INFORMATION TO HELP YOU WITH, BUT HEY- I'LL HELP OUT WHEREVER I CAN WHEN I HAVE TIME. ;)
+NO GUARANTEES I'LL BE ABLE TO REPLY TO YOUR EMAIL OR EVEN HAVE ANY USEFUL INFORMATION TO HELP YOU WITH, BUT HEY- I'LL HELP OUT
+WHEREVER I CAN WHEN I HAVE TIME. ;)
 
 -------------------------------------------
 ----- DEFAULT INSTALL INSTRUCTIONS --------
 - Skillpill Ladder Installation Procedure -
 -------------------------------------------
 
-** Make sure your server supports Perl5! (Perl4 MIGHT work, but I don't see why'd you keep Perl4 installed when Perl 5 is available and is 100% FREE)
+** Make sure your server supports Perl5! (Perl4 MIGHT work, but I don't see why'd you keep Perl4 installed when Perl 5 is available
+and is 100% FREE)
 
 DIRECTIONS:
 
@@ -31,14 +35,17 @@ DIRECTIONS:
 
 CONFIGURE THE ENGINE.CGI SCRIPT
 
-Make the changes to the script which match your server's configuration then save it. Make sure all .cgi files are CHMOD to 755 (or world executable).
+Make the changes to the script which match your server's configuration then save it. Make sure all .cgi files are CHMOD to 755
+(or world executable).
 
 TO START THE LADDER:
-To start (or 'initialize') the ladder, type in the folloowing address (changing the domain and directories to reflect the directory tree within your website of course)
+To start (or 'initialize') the ladder, type in the folloowing address (changing the domain and directories to reflect the directory
+tree within your website of course)
 
 http://www.yourdomain.com/cgi-bin/path/to/engine.cgi?login=init
 
-* You should have now entered the Administrator Section where you can control the behavior of your new ladder. Make whatever changes you want (or none at all) and either click Save or Finish (depending if you're done configuring the ladder).
+* You should have now entered the Administrator Section where you can control the behavior of your new ladder. Make whatever changes
+you want (or none at all) and either click Save or Finish (depending if you're done configuring the ladder).
 
 * When you click FINISH, you will be automatically taken to the ladder directory where your Welcome page is waiting!
 
