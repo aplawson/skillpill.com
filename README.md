@@ -1,7 +1,7 @@
 # skillpill.com
 Gaming ladder software wrote early in my development career traneferred with all of the original content. Circa late 1999-2000 using Perl and flat file databases. #nojudgement
 
->>>
+.. code-block::
 THE OFFICIAL DOWNLOAD SITE FOR THIS PROGRAM IS HTTP://WWW.SKILLPILL.COM
 * Edit: Visit archive.org to view what SkillPill was all about before the domaion was transferred to its current holder.
 
@@ -115,4 +115,4 @@ Resolution:	You're wrong. ;) They ALWAYS go out- but the member has an incorrect
 		mistyped email address so they never got their email. Just log into the
 		SYSOP control panel and set that player's status from "P" (pending) - to "A"
 		(active) or even "R" (ranked).
-<<<
+
