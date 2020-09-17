@@ -74,7 +74,7 @@ Resolution 2:	If the above doesn't work, it is a problem with the data file ("db
 		case it's "PlayerA"
 		So when you're done, the file will look like this:
 		<begin...>
-			Greenhorn's Ladder Data v2.1 - Lic: 								1-<center>Welcome</center>PlayerAaRa-aram513710....
+			`Greenhorn's Ladder Data v2.1 - Lic: 1-<center>Welcome</center>PlayerAaRa-aram513710....`
 		<etc etc>
 		Save the file, CHMOD it to 777 and you're all set! or should be :)
 	D)	If THAT doesn't work, may God help you whilst your players MURDER you for
