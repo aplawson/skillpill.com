@@ -1,11 +1,11 @@
 # skillpill.com
 Gaming ladder software wrote early in my development career traneferred with all of the original content. Circa late 1999-2000 using Perl and flat file databases. #nojudgement
 
-```
-| THE OFFICIAL DOWNLOAD SITE FOR THIS PROGRAM IS HTTP://WWW.SKILLPILL.COM
-| * Edit: Visit archive.org to view what SkillPill was all about before the domaion was transferred to its current holder.
+>>>
+THE OFFICIAL DOWNLOAD SITE FOR THIS PROGRAM IS HTTP://WWW.SKILLPILL.COM
+* Edit: Visit archive.org to view what SkillPill was all about before the domaion was transferred to its current holder.
 
-| WE DO NOT HAVE ANY CONTENT MIRRORS SO IF YOU GOT THIS PROGRAM FROM ANYWHERE OTHER THAN FROM THE ABOVE URL, THERE'S NO GUARANTEE IT WILL WORK. EVEN IF YOU *DID* DOWNLOAD THIS FROM OUR SITE, WE *STILL* DON'T OFFER ANY GUARANTEES ON IT NOR ACCEPT ANY LIABILITY WHEN YOU CRASH YOUR SERVER OR SMOKE SOMETHING WHILE FOOLING AROUND WHERE YOU DON'T BELONG (ASSUMING YOU AREN'T THE SYS ADMIN).
+WE DO NOT HAVE ANY CONTENT MIRRORS SO IF YOU GOT THIS PROGRAM FROM ANYWHERE OTHER THAN FROM THE ABOVE URL, THERE'S NO GUARANTEE IT WILL WORK. EVEN IF YOU *DID* DOWNLOAD THIS FROM OUR SITE, WE *STILL* DON'T OFFER ANY GUARANTEES ON IT NOR ACCEPT ANY LIABILITY WHEN YOU CRASH YOUR SERVER OR SMOKE SOMETHING WHILE FOOLING AROUND WHERE YOU DON'T BELONG (ASSUMING YOU AREN'T THE SYS ADMIN).
 
 I MIGHT HAVE TIME TO HELP. EMAIL ADAM@SKILLPILL.COM WITH ANY QUESTIONS.
 NO GUARANTEES I'LL BE ABLE TO REPLY TO YOUR EMAIL OR EVEN HAVE ANY USEFUL INFORMATION TO HELP YOU WITH, BUT HEY- I'LL HELP OUT WHEREVER I CAN WHEN I HAVE TIME. ;)
@@ -115,4 +115,4 @@ Resolution:	You're wrong. ;) They ALWAYS go out- but the member has an incorrect
 		mistyped email address so they never got their email. Just log into the
 		SYSOP control panel and set that player's status from "P" (pending) - to "A"
 		(active) or even "R" (ranked).
-```
+<<<
