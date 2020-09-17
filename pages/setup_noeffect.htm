@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head><script language="javascript" TYPE="text/javascript">
+<!--
+first=0;
+function chkfirst() {
+  if(first) {
+    fw=open('*burl*/first.htm','first','width=450,height=250,scrollbars');
+  }
+}
+function hw() {
+  hw=open('*burl*/chelp.htm', 'help', 'width=550,height=400,scrollbars');
+}
+//-->
+</script>
+
+<title>Skillpill Ladder : Administrator Section</title>
+</head>
+
+<body BGCOLOR="#000000" TEXT="#80FFFF" LINK="#80FFFF" VLINK="#80FFFF" onload="chkfirst()">
+
+<h1 align="center"><font color="White" face="Arial">Administrator Section</font></h1>
+
+<form>
+  <input type="hidden" name="login" value="goconfig"><input type="hidden" name="stamp"
+  value="*stamp*"><div align="center"><center><table BORDER="1" ALIGN="center" WIDTH="500"
+  BGCOLOR="#6666ff">
+    <tr BGCOLOR="#888888">
+      <td COLSPAN="2"><b><font FACE="Arial" SIZE="2" COLOR="White">For additional information
+      regarding any of the following items click <a HREF="javascript:hw()">here</a> for help.
+      You must click the &quot;Finish&quot; button at the bottom of this page to complete the
+      operation. If you don't, the ladder won't work. To fix that, just log in again and then
+      click &quot;Finish&quot;.</font><font FACE="Arial" SIZE="2" COLOR="Yellow">Be sure to
+      remember your password to this page, item #13.</font></b> </td>
+    </tr>
+    <tr>
+      <td><b><font FACE="Arial" SIZE="2">(1) Page Title for Browser</font></b></td>
+      <td><input NAME="title" SIZE="40" MAXLENGTH="80" VALUE="Skillpill Ladder"> </td>
+    </tr>
+    <tr>
+      <td><font FACE="Arial" SIZE="2"><b>(2) Ranking Mode</b></font></td>
+      <td><select NAME="rankmode" size="1">
+        <option VALUE="rankmode_1">Winner moves to loser position</option>
+        <option VALUE="rankmode_2">Winner moves half way to loser position</option>
+      </select> </td>
+    </tr>
+  </table>
+  </center></div><div align="center"><center><table BORDER="1" ALIGN="center" WIDTH="500"
+  BGCOLOR="#6666ff">
+    <tr>
+      <td><font FACE="Arial" SIZE="2"><b>(3) Allow multiple members to join from same email
+      address: Yes <input TYPE="radio" NAME="multiumail" VALUE="multiumail_yes"> No <input
+      TYPE="radio" NAME="multiumail" VALUE="multiumail_no"> <br>
+      (4) Allow multiple members from same IP to join: Yes <input TYPE="radio" NAME="multiip"
+      VALUE="multiip_yes"> No <input TYPE="radio" NAME="multiip" VALUE="multiip_no"> <br>
+      (5) Limit game names to numbers and letters only: Yes <input TYPE="radio" NAME="namelim"
+      VALUE="namelim_yes"> No <input TYPE="radio" NAME="namelim" VALUE="namelim_no"> </b></font></td>
+    </tr>
+  </table>
+  </center></div><div align="center"><center><table BORDER="1" ALIGN="center" WIDTH="500"
+  BGCOLOR="#6666ff">
+    <tr>
+      <td><b><font FACE="Arial" SIZE="2">(6) The startup page shows your welcome message and the
+      names of the top ten players. This list can be either a text listing or a Java applet. <br>
+      Select which:</font> <font FACE="Arial" SIZE="2">Show scrolling Java applet <input
+      TYPE="radio" NAME="startlist" VALUE="startlist_0"> Show text list <input TYPE="radio"
+      NAME="startlist" VALUE="startlist_1"> </font></b></td>
+    </tr>
+    <tr>
+      <td><font FACE="Arial" SIZE="2"><b>(7) The Control Panel (CP) page allows you to alter
+      member status and other things. When you enter this page the ladder is shut down until you
+      log out. This page has a timeout on it, which will cause it to log out after a set amount
+      of time. There is a link to restart the timeout, but otherwise the CP will log out on its
+      own. Set the timeout value in minutes here: <input NAME="admintime" SIZE="4" VALUE="10"> </b></font></td>
+    </tr>
+    <tr>
+      <td><font FACE="Arial" SIZE="2"><b>(8) Your email address (You can change it in the CP).
+      This is sent with the email message to new members. <input NAME="emaddy" SIZE="30"
+      MAXLENGTH="50" VALUE="no@spam.org"> </b></font></td>
+    </tr>
+    <tr>
+      <td><font FACE="Arial" SIZE="2"><b>(9) On the &quot;About&quot; page you can display your
+      site as being the sponsor of the ladder. Change this as you see fit. If you use any URL's
+      or image tags use a full URL. <br>
+      <textarea NAME="owner" COLS="50" ROWS="4">We da bomb! We da best and nobody is better!</textarea>
+      </b></font></td>
+    </tr>
+    <tr>
+      <td><font FACE="Arial" SIZE="2"><b>(10) Also on the &quot;About&quot; page, you can
+      include credits to whoever may have done a redesign on the web pages used by the ladder
+      program. This will be right under the above credit line. <br>
+      <textarea NAME="agent2" COLS="50" ROWS="4">I'd like to thank my momma, my agent and my future wife for putting up with me for all these years!</textarea>
+      </b></font></td>
+    </tr>
+    <tr>
+      <td><font FACE="Arial" SIZE="2"><b>(11) Password to Control Panel <input NAME="pass"
+      SIZE="15" MAXLENGTH="30" VALUE="Spassword"> </b></font></td>
+    </tr>
+    <tr>
+      <td><font FACE="Arial" SIZE="2"><b>(12) Backup/Restore password <input NAME="backup"
+      SIZE="15" MAXLENGTH="30" VALUE="BRpassword"> </b></font></td>
+    </tr>
+    <tr BGCOLOR="#ff6666">
+      <td><b><font FACE="Arial" SIZE="2" COLOR="White">(13) Owner password</font><font
+      FACE="Arial" SIZE="2"> <input NAME="ppass" SIZE="15" MAXLENGTH="30" VALUE="No1Beda"> </font></b></td>
+    </tr>
+    <tr>
+      <td><font FACE="Arial" SIZE="2"><b>(14) Max comment length for recent games <input
+      NAME="maxcom" SIZE="4" MAXLENGTH="4" VALUE="150"> </b></font></td>
+    </tr>
+    <tr>
+      <td><font FACE="Arial" SIZE="2"><b>(15) Max history entries/player for recent games <input
+      NAME="maxlog" SIZE="3" MAXLENGTH="3" VALUE="10"> </b></font></td>
+    </tr>
+    <tr>
+      <td><font FACE="Arial" SIZE="2"><b>(16) Number of straight wins required for
+      &quot;hot&quot; graphic <input NAME="imgcsw" SIZE="2" MAXLENGTH="2" VALUE="5"> </b></font></td>
+    </tr>
+    <tr>
+      <td><font FACE="Arial" SIZE="2"><b>(17) HTML tag for the above &quot;hot&quot; graphic <br>
+      <input NAME="imgsw" SIZE="50" MAXLENGTH="80"
+      VALUE="http://www.skillpill.com/ladder/images/hot.gif"> </b></font></td>
+    </tr>
+    <tr>
+      <td><font FACE="Arial" SIZE="2"><b>(18) Number of stright loses required for
+      &quot;cold&quot; graphic <input TYPE="TEXT" NAME="imgcsl" SIZE="2" MAXLENGTH="2"
+      VALUE="*imgcsl*"> </b></font></td>
+    </tr>
+    <tr>
+      <td><font FACE="Arial" SIZE="2"><b>(19) HTML tag for the above &quot;cold&quot; graphic <br>
+      <input NAME="imgsl" SIZE="50" MAXLENGTH="80"
+      VALUE="http://www.skillpill.com/ladder/images/cold.gif"> </b></font></td>
+    </tr>
+    <tr>
+      <td><font FACE="Arial" SIZE="2"><b>(20) If no games logged in this many days use
+      &quot;frozen&quot; graphic <input TYPE="TEXT" NAME="tfrozen" SIZE="2" MAXLENGTH="2"
+      VALUE="*tfrozen*"> </b></font></td>
+    </tr>
+    <tr>
+      <td><font FACE="Arial" SIZE="2"><b>(21) HTML tag for above &quot;frozen&quot; graphic
+      (INACTIVE)<br>
+      <input NAME="imgfrz" SIZE="50" MAXLENGTH="80"
+      VALUE="http://www.skillpill.com/ladder/images/frozen.gif"> </b></font></td>
+    </tr>
+    <tr>
+      <td><b><font FACE="Arial" SIZE="2">(22) When someone joins the ladder they are sent an
+      email. Set the content of that email below. The following &quot;tokens&quot; can be used
+      to represent the actual information that will be in the email:</font><font FACE="Arial"
+      SIZE="2" COLOR="Yellow">*rname*</font><font FACE="Arial" SIZE="2">=real name,</font><font
+      FACE="Arial" SIZE="2" COLOR="Yellow">*name*</font><font FACE="Arial" SIZE="2">=game name,</font><font
+      FACE="Arial" SIZE="2" COLOR="Yellow">*pw*</font><font FACE="Arial" SIZE="2">=player
+      password to the ladder,</font><font FACE="Arial" SIZE="2" COLOR="Yellow">*act*</font><font
+      FACE="Arial" SIZE="2">=activation code for ladder access,</font><font FACE="Arial"
+      SIZE="2" COLOR="Yellow">*online*</font><font FACE="Arial" SIZE="2">=the URL for turning on
+      the &quot;on line&quot; indicator,</font><font FACE="Arial" SIZE="2" COLOR="Yellow">*offline*</font><font
+      FACE="Arial" SIZE="2">=the URL for turning off the &quot;on line&quot; indicator,</font><font
+      FACE="Arial" SIZE="2" COLOR="Yellow">*url*</font><font FACE="Arial" SIZE="2">=the URL to
+      the ladder<br>
+      <textarea NAME="emmsg" COLS="50" ROWS="6">You suck! Go away! Stop playing on our ladder! :)</textarea>
+      </font></b></td>
+    </tr>
+    <tr>
+      <td><font FACE="Arial" SIZE="2"><b>(23) The following is the frame layout in case you wish
+      to change it. <br>
+      <textarea NAME="indexf" COLS="50" ROWS="6">&lt;html&gt;
+
+&lt;head&gt;
+&lt;title&gt;Game Ladder&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;frameset BORDER=&quot;2&quot; frameborder=&quot;0&quot; bordercolor=&quot;#ff0000&quot; rows=&quot;*,60&quot;&gt;
+  &lt;frame NAME=&quot;main&quot; SRC=&quot;start.htm&quot;&gt;
+  &lt;frame NAME=&quot;nav&quot; SRC=&quot;nav.htm&quot; MARGINHEIGHT=&quot;1&quot; MARGINWIDTH=&quot;1&quot; NORESIZE SCROLLING=&quot;no&quot;&gt;
+  &lt;noframes&gt;
+  &lt;body&gt;
+  &lt;h2 ALIGN=&quot;CENTER&quot;&gt;Frame capable browser required.&lt;/h2&gt;
+  &lt;/body&gt;
+  &lt;/noframes&gt;
+&lt;/frameset&gt;
+&lt;/html&gt;</textarea> </b></font></td>
+    </tr>
+    <tr>
+      <td><font FACE="Arial" SIZE="2"><b>(24) This is the number of people to list per page in
+      the &quot;Show Ladder&quot; ranking list. <input TYPE="TEXT" NAME="showrange" SIZE="3"
+      VALUE="*showrange*"> </b></font></td>
+    </tr>
+    <tr>
+      <td><input TYPE="submit" NAME="Button" VALUE="Save and Continue"> <input TYPE="RESET"
+      NAME="Button" VALUE="Reset"> <input TYPE="submit" NAME="Button" VALUE="Save and Exit"> </td>
+    </tr>
+  </table>
+  </center></div><p>&nbsp;</p>
+</form>
+</body>
+</html>

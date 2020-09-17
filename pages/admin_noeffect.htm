@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<title>Game Ladder</title>
+<script language="javascript" type="text/javascript">
+<!--
+var tstart=15;
+var tval=tstart;
+function tcheck(t) {
+  if(t) {
+    clearTimeout();
+    tval=tstart;
+  }
+  document.timelim.pgtimeout.value=tval;
+  if(tval == 0) {
+    location='http://*url*&login=admin&stamp=*stamp*&Button=Log+Out';
+    return;
+  }
+  tval--;
+  setTimeout('tcheck()', '60000');
+}
+function treset() {
+  tval=tstart;
+  document.timelim.pgtimeout.value=tval;
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#000000" text="#FFFF00" link="#80FFFF" vlink="#80FFFF" onload="tcheck()">
+<!-- START HEADER -->
+<!-- END HEADER -->
+<font face="Arial" color="#FFFFFF">
+
+<p align="center"><big><big><big>SYSOP CONTROL PANEL</big></big></big></font></p>
+
+<p align="center"><strong><big><font face="Arial">S A M P L E&nbsp;&nbsp; O N L Y !</font><big>
+</big></big></strong></p>
+
+<p align="center">&nbsp;</p>
+<div align="center"><center>
+
+<table border="1" align="center" width="657">
+  <tr bgcolor="ff6666">
+    <td width="651"><font face="Arial"><font size="1"><font color="White">Note: Even if you
+    don't make any changes you must click on the</font><font color="Yellow"> Log Out</font></font><small>
+    </small></font><font color="White" size="1" face="Arial">button to exit. Any time you're
+    in this menu the ladder is shut down, and only by pressing</font><small><font face="Arial">
+    </font></small><font color="Yellow" size="1" face="Arial">Log Out</font><font face="Arial"><font
+    size="1"><font color="White">, will open it up again. If you exit without clicking</font></font><small>
+    </small></font><font color="Yellow" size="1" face="Arial">Log Out</font><font
+    color="White" size="1" face="Arial">, the ladder will remain shut down. <br>
+    </font><form name="timelim">
+      <p><font face="Arial"><font size="1"><font color="White">This page will automatically log
+      out in</font></font><small> <input type="TEXT" name="pgtimeout" size="4" onfocus="blur()">
+      </small></font><font color="White" size="1" face="Arial">minutes.</font><font face="Arial"><small>
+      </small></font><font color="White" size="1" face="Arial"><a href
+      onclick="treset();return false">Click here</a> to reset the countdown.</font></p>
+    </form>
+    </td>
+  </tr>
+</table>
+</center></div>
+
+<p><font face="Arial"><br>
+</font></p>
+
+<form method="POST">
+  <input type="hidden" name="lnum-*fpn*" value="1"><input type="hidden" name="login"
+  value="admin"><input type="hidden" name="stamp" value="*stamp*"><div align="center"><center><p><font
+  face="Arial"><b><input type="SUBMIT" name="Button" value="Update"> <input type="RESET"
+  name="Button" value="Reset"> <input type="SUBMIT" name="Button" value="Log Out"> <input
+  type="SUBMIT" name="Button" value="Help"></b></font></p>
+  </center></div><div align="center"><center><table border="2" align="center" width="650">
+    <tr bgcolor="6666ff">
+      <th width="70%"><font color="#F8FD13" size="2" face="Arial"><b>FPN</b></font></th>
+      <th><font face="Arial"><b><font color="#F8FD13" size="2">Name G</font> <br>
+      <font color="#F8FD13" size="2">Name R</font></b></font></th>
+      <th><font face="Arial"><b><font color="#F8FD13" size="2">Password</font> <br>
+      <font color="#F8FD13" size="2">Web Addr</font></b></font></th>
+      <th><font color="#F8FD13" size="2" face="Arial"><b>E-MAIL</b></font></th>
+      <th><font color="#F8FD13" size="2" face="Arial"><b>Stat</b></font></th>
+      <th><font color="#F8FD13" size="2" face="Arial"><b>Move</b></font></th>
+      <th><font color="#F8FD13" size="2" face="Arial"><b>TW</b></font></th>
+      <th><font color="#F8FD13" size="2" face="Arial"><b>TL</b></font></th>
+      <th><font color="#F8FD13" size="2" face="Arial"><b>SW</b></font></th>
+      <th><font color="#F8FD13" size="2" face="Arial">SL</font></th>
+      <th><font color="#F8FD13" size="2" face="Arial">HR</font></th>
+    </tr>
+    <tr bgcolor="#777777">
+      <td><div align="center"><center><p><b><font color="Aqua" size="2" face="Arial">1</font><font
+      face="Arial"> <br>
+      <input type="checkbox" name="mod-*fpn*" value="yes"> <font color="Aqua" size="2">Mod</font></font></b></td>
+      <td align="center"><font face="Arial"><input name="name-*fpn*" size="10"
+      value="Player Name"> <br>
+      <input name="rna-*fpn*" size="10" value="Real Name"></font></td>
+      <td align="center"><font face="Arial"><input name="pw-*fpn*" size="10" value="password"><b><br>
+      </font><font color="Aqua" size="2" face="Arial">10.234.167.99</font></b></td>
+      <td align="center"><font face="Arial"><input name="em-*fpn*" size="20" value="no@spam.org">
+      <br>
+      <font color="Aqua" size="2"><a href="mailto:*em*"><b>Send mail</b></a></font></font></td>
+      <td align="center"><font face="Arial"><b><input name="stat-*fpn*" size="1" maxlength="1"
+      value="R"> <br>
+      </b></font></td>
+      <td align="center"><font face="Arial"><input type="TEXT" name="move-*fpn*" size="4"
+      maxlength="4"></font></td>
+      <td align="center"><font face="Arial"><input name="tw-*fpn*" size="4" maxlength="4"
+      value="79"></font></td>
+      <td align="center"><font face="Arial"><input name="tl-*fpn*" size="4" maxlength="4"
+      value="12"></font></td>
+      <td align="center"><font face="Arial"><input name="sw-*fpn*" size="4" maxlength="4"
+      value="8"></font></td>
+      <td align="center"><font face="Arial"><input name="sl-*fpn*" size="4" maxlength="4"
+      value="0"></font></td>
+      <td align="center"><font face="Arial"><input name="hr-*fpn*" size="4" maxlength="4"
+      value="1"></font></td>
+    </tr>
+  </table>
+  </center></div><hr width="50%" align="center">
+  <div align="center"><center><p><strong><small><small><font face="Arial">Email alert
+  enable: yes <input type="radio" name="emalrt" value="emalrt_yes"> | no <input type="radio"
+  name="emalrt" value="emalrt_no"> <br>
+  Change Admin email <input type="checkbox" name="chem" value="yes">to <input name="ema"
+  value="no@spam.org" size="30"> <br>
+  Change Admin Password <input type="checkbox" name="chpw" value="yes">to <input
+  type="PASSWORD" name="napw" size="20"> <br>
+  <br>
+  Create backup <input type="radio" name="brd" value="backup">| Restore from backup <input
+  type="radio" name="brd" value="restore"> <br>
+  Clear all stats (retain members) <input type="radio" name="brd" value="cstat">| Delete all
+  members <input type="radio" name="brd" value="delete"> <br>
+  Password for Backup/Restore/Clear Stats/Delete: <input type="PASSWORD" name="brpw"
+  size="15" maxlength="15"></font></small></small></strong></p>
+  </center></div><div align="center"><center><p><strong><small><small><font face="Arial"><input
+  type="SUBMIT" name="Button" value="Update"> <input type="RESET" name="Button"
+  value="Reset"> <input type="SUBMIT" name="Button" value="Log Out"> <input type="SUBMIT"
+  name="Button" value="Help"></font></small></small></strong></p>
+  </center></div><hr width="50%" align="center">
+  <div align="center"><center><p><font face="Arial"><strong><small><small>The following is
+  for your &quot;welcome&quot; message. <br>
+  <input type="checkbox" name="udmsg" value="yes"> Click to update your changes then
+  &quot;Update&quot; to make changes effective. </small></small></strong><b><br>
+  </b><textarea name="message" cols="53" rows="15">Welcome</textarea></font></p>
+  </center></div><div align="center"><center><table border="0" align="center" width="100%">
+    <tr>
+      <td align="CENTER"><font face="Arial">&nbsp;<br>
+      </font></td>
+    </tr>
+  </table>
+  </center></div>
+</form>
+</body>
+</html>

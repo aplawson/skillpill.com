@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head><script language="JavaScript" TYPE="text/javascript">
+<!--
+function show(dat) {
+ if(!window.vw || vw.closed)
+  vw=open("","","width=300,height=150,scrollbars,resizable");
+ vw.document.open();
+ vw.document.write("<html><head><title>Recent Games<\/title><\/head>"
+  +"<body bgcolor='#990000' text='#ffffff'>"
+  +"<font face='arial' size='2'><b>");
+ if(dat=="") {
+  vw.document.write("No games logged.");
+  vw.document.write("<\/body><\/html>");
+  vw.document.close();
+  return;
+ }
+ aray=dat.split("`");
+ size=aray.length;
+ vw.document.write("Name="+aray[0]+"<br><hr>");
+ if(aray.length > 2) {
+  for(x=1; x<size-1; x+=4) {
+   vw.document.write("Date="+aray[x]+"<br>");
+   vw.document.write("Played="+aray[x+1]+"<br>");
+   vw.document.write("Result="+aray[x+2]+"<br>");
+   if(aray[x+3] == '-' || aray[x+3] == '') {
+    vw.document.write("<hr>");
+   }
+   else {
+    vw.document.write("Comments="+aray[x+3]+"<br><hr>");
+   }
+  }
+ }
+ else {
+  vw.document.write(aray[1]+"<br><hr>");
+ }
+ vw.document.write("<\/body><\/html>");
+ vw.document.close();
+}
+// player info
+blank="";
+
+udx="";
+// -->
+</script>
+
+<title>Game Ladder</title>
+</head>
+
+<body BGCOLOR="#000000" TEXT="#FFFF00" LINK="#FFFF00" VLINK="#FFFF00">
+<b><font size="4" color="#ffffff" face="Verdana">
+
+<p align="center"></font></b><font color="#ffffff" face="Verdana" size="6">Game Ladder</font></p>
+
+<p align="center">&nbsp;</p>
+
+<p align="center"><strong><font face="Verdana" size="3" color="#FFFF00">League Standings</font><font
+color="#C0C0C0" face="Verdana" size="3"> </strong>*</font></p>
+
+<form METHOD="POST" ACTION="http://*url*" NAME="sr">
+  <input type="hidden" name="login" value="showladdr"><div align="center"><center><table
+  BORDER="0" ALIGN="center">
+    <tr>
+      <td style="border: medium none"><select NAME="showrange"
+      onchange="if(this.options[this.selectedIndex].value)document.sr.submit()" size="1">
+        <option VALUE>Select Rank Range</option>
+      </select> </td>
+    </tr>
+  </table>
+  </center></div><div align="center"><center><p>&nbsp;</p>
+  </center></div>
+</form>
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="90%">
+  <tr>
+    <td width="11%" align="center" bgcolor="#FFFFFF" style="border: 1px ridge rgb(0,0,0)"
+    rowspan="2"><font face="Verdana" color="#000000"><small><strong>Rank</strong></small></font></td>
+    <td width="11%" align="center" bgcolor="#C0C0C0" style="border: 1px ridge rgb(0,0,0)"
+    rowspan="2"><small><font face="Verdana" color="#000000"><strong>Name</strong></font></small></td>
+    <td width="11%" align="center" bgcolor="#C0C0C0" style="border: 1px ridge rgb(0,0,0)"
+    rowspan="2"><small><font face="Verdana" color="#000000"><strong>Win%</strong></font></small></td>
+    <td width="22%" colspan="2" align="center" bgcolor="#00FFFF"
+    style="border: 1px ridge rgb(0,0,0)"><small><font face="Verdana" color="#000000"><strong>Player
+    Status</strong></font></small></td>
+    <td width="11%" align="center" bgcolor="#00FF00" style="border: 1px ridge rgb(0,0,0)"><small><font
+    face="Verdana" color="#000000"><strong>Total</strong></font></small></td>
+    <td width="11%" align="center" bgcolor="#00FF00" style="border: 1px ridge rgb(0,0,0)"><small><font
+    face="Verdana" color="#000000"><strong>Straight</strong></font></small></td>
+    <td width="23%" colspan="2" align="center" bgcolor="#FFD2D2"
+    style="border: 1px ridge rgb(0,0,0)"><small><font face="Verdana" color="#000000"><strong>Game
+    History</strong></font></small></td>
+  </tr>
+  <tr>
+    <td width="11%" style="border: 1px ridge rgb(0,0,0)" align="center" bgcolor="#8A8AFF"><small><font
+    face="Verdana" color="#000000"><strong><small>Activity</small></strong></font></small></td>
+    <td width="11%" style="border: 1px ridge rgb(0,0,0)" align="center" bgcolor="#8A8AFF"><small><font
+    face="Verdana" color="#000000"><strong><small>Online</small></strong></font></small></td>
+    <td width="11%" style="border: 1px ridge rgb(0,0,0)" align="center" bgcolor="#00D500"><small><font
+    face="Verdana" color="#000000"><strong><small>Win-Loss</small></strong></font></small></td>
+    <td width="11%" style="border: 1px ridge rgb(0,0,0)" align="center" bgcolor="#00D500"><small><font
+    face="Verdana" color="#000000"><strong><small>Win-Loss</small></strong></font></small></td>
+    <td width="11%" style="border: 1px ridge rgb(0,0,0)" align="center" bgcolor="#FF7878"><small><font
+    face="Verdana" color="#000000"><strong><small>Defeated By:</small></strong></font></small></td>
+    <td width="12%" style="border: 1px ridge rgb(0,0,0)" align="center" bgcolor="#FF7878"><small><font
+    face="Verdana" color="#000000"><strong><small>History</small></strong></font></small></td>
+  </tr>
+  <tr>
+    <td width="11%"
+    style="border-left: 0px none rgb(0,0,0); border-right: 0px none rgb(0,0,0); border-top: 0px none rgb(0,0,0); border-bottom: 1px solid rgb(192,192,192)"
+    align="center"><font color="#FFFF00" face="Verdana"><b>*ra*</b><small><small><small><small>(*hr*)</small></small></small></small></font></td>
+    <td width="11%"
+    style="border-left: 0px none rgb(0,0,0); border-right: 0px none rgb(0,0,0); border-top: 0px none rgb(0,0,0); border-bottom: 1px solid rgb(192,192,192)"
+    align="center"><p align="left"><font color="#FFFF00" face="Verdana"><small><small><img
+    src="*img*" height="30" border="0" align="center"></small></small><br>
+    <small><small>*name*</small></small><br>
+    </font><a HREF="http://*url*?login=smd&amp;name=*iname*"
+    style="color: rgb(192,192,192); text-decoration: underline"><small><small><font
+    face="Verdana">Profile</font></small></small></a></td>
+    <td width="11%"
+    style="border-left: 0px none rgb(0,0,0); border-right: 0px none rgb(0,0,0); border-top: 0px none rgb(0,0,0); border-bottom: 1px solid rgb(192,192,192)"
+    align="center"><small><font color="#FFFF00" face="Verdana"><small><script
+    language="JavaScript">
+
+<!-- hide this stuff from other browsers
+
+function rndmin(val,dpr) {
+val=Math.round(parseFloat(val*Math.pow(10,dpr)))/Math.pow(10,dpr);
+val+='';
+dp=val.indexOf('.');
+dpc=0;
+if(dp < 0) {
+if(dpr > 0) {
+val=val+'.';
+dpc=dpr;
+}
+}
+else dpc=dpr-val.length+1+dp;
+for(x=0; x<dpc; x++) val=val+'0';
+return val;
+}
+ 
+
+var total_wins = *tw*;
+var total_losses = *tl*;
+var win_percent = (total_wins/(total_wins+total_losses))*100;
+y=rndmin(win_percent, 2);
+document.write(y);
+
+// end the hiding comment -->
+</script>%</small></font></small></td>
+    <td width="11%"
+    style="border-left: 0px none rgb(0,0,0); border-right: 0px none rgb(0,0,0); border-top: 0px none rgb(0,0,0); border-bottom: 1px solid rgb(192,192,192)"
+    align="center"><small><font color="#FFFF00" face="Verdana"><small>*rg*</small></font></small></td>
+    <td width="11%"
+    style="border-left: 0px none rgb(0,0,0); border-right: 0px none rgb(0,0,0); border-top: 0px none rgb(0,0,0); border-bottom: 1px solid rgb(192,192,192)"
+    align="center"><small><font color="#FFFF00" face="Verdana"><small>*ol*</small></font></small></td>
+    <td width="11%"
+    style="border-left: 0px none rgb(0,0,0); border-right: 0px none rgb(0,0,0); border-top: 0px none rgb(0,0,0); border-bottom: 1px solid rgb(192,192,192)"
+    align="center"><small><font color="#FFFF00" face="Verdana"><small>*tw*-*tl*</small></font></small></td>
+    <td width="11%"
+    style="border-left: 0px none rgb(0,0,0); border-right: 0px none rgb(0,0,0); border-top: 0px none rgb(0,0,0); border-bottom: 1px solid rgb(192,192,192)"
+    align="center"><small><font color="#FFFF00" face="Verdana"><small>*sw*-*sl*</small></font></small></td>
+    <td width="11%"
+    style="border-left: 0px none rgb(0,0,0); border-right: 0px none rgb(0,0,0); border-top: 0px none rgb(0,0,0); border-bottom: 1px solid rgb(192,192,192)"
+    align="center"><small><font color="#FFFF00" face="Verdana"><small>*last*</small></font></small></td>
+    <td width="12%"
+    style="border-left: 0px none rgb(0,0,0); border-right: 0px none rgb(0,0,0); border-top: 0px none rgb(0,0,0); border-bottom: 1px solid rgb(192,192,192)"
+    align="center"><small><a HREF onclick="show(udx);vw.focus();return(false)"><img BORDER="0"
+    SRC="images/recent.gif" HEIGHT="10" WIDTH="13"></a></small></td>
+  </tr>
+</table>
+</center></div>
+
+<p align="center"><font color="#C0C0C0" face="Verdana" size="3">*</font><font
+face="Verdana" color="#C0C0C0" size="2"> </font><font face="Verdana" size="1"
+color="#800040">Players who have not completed a match for this ladder<br>
+are listed in above Range list-box as &quot;Unranked&quot;.<br>
+When 1st game is won or lost, player will be ranked<br>
+and move out of Unranked status.</font></p>
+
+<p>&nbsp;</p>
+</body>
+</html>

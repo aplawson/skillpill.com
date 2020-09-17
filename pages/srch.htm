@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+
+<head><script language="javascript"><!--
+function setname(n) {
+  document.srchpg.cename.value=n.options[n.selectedIndex].text;
+  n.selectedIndex=0;
+}
+//-->
+</script>
+
+<title>Game Ladder</title>
+</head>
+
+<body BGCOLOR="#000000" TEXT="#FFFF00"><!-- START HEADER -->
+
+<!-- END HEADER -->
+
+<p align="center"><font face="Verdana" size="6" color="#FFFFFF">Game Ladder</font></p>
+
+<p align="center"><font face="Verdana" color="#FFFF00" size="5">&nbsp;</font></p>
+
+<p align="center"><font face="Verdana" color="#FFFF00" size="5">Member Services</font></p>
+
+<p align="center">&nbsp;</p>
+
+<form METHOD="POST" ACTION="http://*url*" NAME="srchpg">
+  <input type="hidden" name="login" value="search"><div align="center"><center><p><a
+  style="color: rgb(255,255,0); text-decoration: underline"
+  href="http://*url*?login=search&amp;op=cpi"><font face="Verdana">Modify Player Profile
+  HERE</font></a></p>
+  </center></div><div align="center"><center><p><font face="Verdana"><br>
+  </font><a name="Search"><font size="4" face="Verdana" color="#FFFF00">Search for Other
+  Players</font></a></p>
+  </center></div><div align="center"><center><table BORDER="1" ALIGN="center" WIDTH="300"
+  BGCOLOR="#777777">
+    <tr>
+      <td bgcolor="#000000"><div align="center"><center><table BORDER="0" ALIGN="center"
+      WIDTH="100%">
+        <tr>
+          <td WIDTH="200"><font SIZE="2" face="Verdana">Search by Player Name</font></td>
+          <td><font SIZE="2" face="Verdana"><input TYPE="TEXT" NAME="gname" SIZE="20" MAXLENGTH="30">
+          </font></td>
+        </tr>
+      </table>
+      </center></div></td>
+    </tr>
+    <tr>
+      <td bgcolor="#000000"><div align="center"><center><table BORDER="0" ALIGN="center"
+      WIDTH="100%">
+        <tr>
+          <td WIDTH="200"><font SIZE="2" face="Verdana">Search by E-mail</font></td>
+          <td><font SIZE="2" face="Verdana"><input TYPE="TEXT" NAME="email" SIZE="20" MAXLENGTH="30">
+          </font></td>
+        </tr>
+      </table>
+      </center></div></td>
+    </tr>
+    <tr>
+      <td bgcolor="#000000"><font SIZE="2" face="Verdana">Search by rank # <input TYPE="TEXT"
+      NAME="rank" SIZE="3" MAXLENGTH="4"> </font></td>
+    </tr>
+    <tr>
+      <td bgcolor="#000000"><font SIZE="2" face="Verdana">Search by <select NAME="select"
+      size="1">
+        <option VALUE="-"></option>
+        <option VALUE="top10">Top 10</option>
+        <option VALUE="top20">Top 20</option>
+        <option VALUE="top50">Top 50</option>
+        <option VALUE="top100">Top 100</option>
+        <option VALUE="bot10">Bottom 10</option>
+        <option VALUE="bot20">Bottom 20</option>
+        <option VALUE="bot50">Bottom 50</option>
+        <option VALUE="bot100">Bottom 100</option>
+      </select> </font></td>
+    </tr>
+  </table>
+  </center></div><div align="center"><center><p><font face="Verdana"><input TYPE="SUBMIT"
+  NAME="Button" VALUE="Search"> <br>
+  </font></p>
+  </center></div><hr>
+  <div align="center"><center><p><font SIZE="4" face="Verdana" color="#FFFF00"><a
+  name="Challenge">Submit Formal Challenge</a></font></p>
+  </center></div><div align="center"><center><table BORDER="1" ALIGN="center" WIDTH="350"
+  BGCOLOR="#777777">
+    <tr>
+      <td bgcolor="#000000"><div align="center"><center><table BORDER="0" ALIGN="center"
+      WIDTH="100%">
+        <tr>
+          <td ALIGN="RIGHT" bgcolor="#000000"><font SIZE="2" face="Verdana">Your Ladder Name</font></td>
+          <td><font SIZE="2" face="Verdana"><input TYPE="TEXT" NAME="crname" SIZE="20"
+          MAXLENGTH="30"> </font></td>
+        </tr>
+        <tr>
+          <td ALIGN="RIGHT"><font SIZE="2" face="Verdana">You Challenge</font></td>
+          <td><font SIZE="2" face="Verdana"><input TYPE="TEXT" NAME="cename" SIZE="20"
+          MAXLENGTH="30"> <br>
+          *mnsel*</font></td>
+        </tr>
+        <tr>
+          <td ALIGN="RIGHT"><font SIZE="2" face="Verdana">Your Password</font></td>
+          <td><font SIZE="2" face="Verdana"><input TYPE="PASSWORD" NAME="crpw" SIZE="20"
+          MAXLENGTH="30"> </font></td>
+        </tr>
+      </table>
+      </center></div></td>
+    </tr>
+  </table>
+  </center></div><div align="center"><center><p><font face="Verdana"><input TYPE="SUBMIT"
+  NAME="Button" VALUE="Send Challenge"> <br>
+  </font></p>
+  </center></div><hr>
+  <div align="center"><center><p><font size="4" face="Verdana" color="#FFFF00"><a
+  name="Withdraw">Withdraw From Ladder</a></font><font SIZE="2" face="Verdana"
+  color="#FFFF00"><br>
+  </font><font face="Verdana" color="#FFFF00" size="3">(<a name="Withdraw">Permanent
+  Removal)</a></font></p>
+  </center></div><div align="center"><center><table BORDER="1" ALIGN="center" WIDTH="350"
+  BGCOLOR="#777777">
+    <tr>
+      <td><div align="center"><center><table BORDER="0" ALIGN="center" WIDTH="100%"
+      bgcolor="#000000">
+        <tr>
+          <td ALIGN="RIGHT" bgcolor="#000000"><font size="2" face="Verdana">Player</font></td>
+          <td bgcolor="#000000"><font face="Verdana"><input TYPE="TEXT" NAME="wdgn" SIZE="20"
+          MAXLENGTH="30"> </font></td>
+        </tr>
+        <tr>
+          <td ALIGN="RIGHT" bgcolor="#000000"><font SIZE="2" face="Verdana">Password</font></td>
+          <td bgcolor="#000000"><font face="Verdana"><input TYPE="PASSWORD" NAME="wdpw" SIZE="20"
+          MAXLENGTH="30"> </font></td>
+        </tr>
+      </table>
+      </center></div></td>
+    </tr>
+  </table>
+  </center></div><div align="center"><center><p><font face="Verdana"><input TYPE="SUBMIT"
+  NAME="Button" VALUE="Delete Me"> <br>
+  </font></p>
+  </center></div><hr>
+  <div align="center"><center><p><font face="Verdana" color="#FFFF00" size="4"><a
+  name="Password">Forgot Your Password</a>?</font></p>
+  </center></div><div align="center"><center><table BORDER="1" ALIGN="center" WIDTH="350"
+  BGCOLOR="#777777">
+    <tr>
+      <td><div align="center"><center><table BORDER="0" ALIGN="center" WIDTH="100%"
+      bgcolor="#000000" cellspacing="0" style="border: medium none">
+        <tr align="center">
+          <td ALIGN="RIGHT" bgcolor="#000000" style="border: medium none"><div align="right"><p><font
+          size="2" face="Verdana">Player</font></td>
+          <td bgcolor="#000000" style="border: medium none"><div align="center"><center><p><font
+          face="Verdana"><input TYPE="TEXT" NAME="rsgn" SIZE="20" MAXLENGTH="30"> </font></td>
+        </tr>
+      </table>
+      </center></div></td>
+    </tr>
+  </table>
+  </center></div><div align="center"><center><p><font face="Verdana"><input TYPE="SUBMIT"
+  NAME="Button" VALUE="Resend Password"> </font></p>
+  </center></div>
+</form>
+
+<p align="center">&nbsp;</p>
+<!-- START FOOTER -->
+
+<!-- END FOOTER --></body>
+</html>

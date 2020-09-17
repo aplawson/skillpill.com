@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Game Ladder</title>
+<script language="javascript" type="text/javascript">
+<!--
+var tstart=15;
+var tval=tstart;
+function tcheck(t) {
+  if(t) {
+    clearTimeout();
+    tval=tstart;
+  }
+  document.timelim.pgtimeout.value=tval;
+  if(tval == 0) {
+    location='http://*url*?login=admin&stamp=*stamp*&Button=Log+Out';
+    return;
+  }
+  tval--;
+  setTimeout('tcheck()', '60000');
+}
+function treset() {
+  tval=tstart;
+  document.timelim.pgtimeout.value=tval;
+}
+//-->
+</script>
+</head>
+<body bgcolor="#555555" text="#80FFFF" link="#80FFFF" vlink="#80FFFF" onload="tcheck()">
+<center>
+<h1>Ladder Control Panel</h1>
+</center>
+
+<center>
+<table border="1" align="center" width="400">
+<tr bgcolor="ff6666">
+<td><font face="Arial" size="2" color="White"><b><u>Note</u>: Even if you don't make any changes you must click on the</b></font><b><font face="Arial" size="2" color="Yellow">Log Out</font> <font
+face="Arial" size="2" color="White">button to exit. Any time you're in this menu the ladder is shut down, and only by pressing</font> <font face="Arial" size="2" color="Yellow">Log Out</font><font
+face="Arial" size="2" color="White">, will open it up again. If you exit without clicking</font> <font face="Arial" size="2" color="Yellow">Log Out</font><font face="Arial" size="2" color="White">,
+the ladder will remain shut down.
+<br>
+</font></b> 
+
+<form name="timelim">
+<p><font color="White" face="Arial" size="2"><b>This page will automatically log out in</b></font> <b>
+ <input type="TEXT" name="pgtimeout" size="4" onfocus="blur()"> <font color="White" face="Arial"
+size="2">minutes.</font>
+<br>
+ <font color="White" face="Arial" size="2">
+<a href="" onclick="treset();return false"><font color="White" face="Arial" size="2">Click here</font></a> to reset the countdown.</font></b></p>
+</form>
+</td>
+</tr>
+</table>
+</center>
+
+<br>
+
+<form method="POST" action="http://*url*">
+<center>
+<p><b>
+ <input type="SUBMIT" name="Button" value="Update">
+ <input type="RESET" name="Button" value="Reset">
+ <input type="SUBMIT" name="Button" value="Log Out">
+ <input type="SUBMIT" name="Button" value=
+"Help"></b></p>
+</center>
+
+<center>
+<table border="2" align="center" width="650">
+<tr bgcolor="6666ff">
+<th width="70%"><b><font color="#F8FD13" face="Arial" size="2">FPN</font></b></th>
+<th><b><font color="#F8FD13" face="Arial" size="2">Name G</font>
+<br>
+<font color="#F8FD13" face="Arial" size="2">Name R</font></b></th>
+<th><b><font color="#F8FD13" face="Arial" size="2">Password</font>
+<br>
+<font color="#F8FD13" face="Arial" size="2">Web Addr</font></b></th>
+<th><b><font color="#F8FD13" face="Arial" size="2">E-MAIL</font></b></th>
+<th><b><font color="#F8FD13" face="Arial" size="2">Stat</font></b></th>
+<th><b><font color="#F8FD13" face="Arial" size="2">Move</font></b></th>
+<th><b><font color="#F8FD13" face="Arial" size="2">TW</font></b></th>
+<th><b><font color="#F8FD13" face="Arial" size="2">TL</font></b></th>
+<th><b><font color="#F8FD13" face="Arial" size="2">SW</font></b></th>
+<th><font color="#F8FD13" face="Arial" size="2">SL</font></th>
+<th><font color="#F8FD13" face="Arial" size="2">HR</font></th>
+</tr>
+
+<tr bgcolor="#777777">
+<td><b><font color="Aqua" face="Arial" size="2">*fpn*</font>
+<br>
+ <input type="checkbox" name="mod-*fpn*" value="yes">
+ <input type="hidden" name="lnum-*fpn*" size="1" value="1"><font size="2" color="Aqua" face="Arial">Mod</font></b></td>
+<td align="CENTER">
+ <input type="TEXT" name="name-*fpn*" size="10" value="*na*">
+<br>
+ <input type="TEXT" name="rna-*fpn*" size="10" value="*rna*"></td>
+<td align="CENTER">
+ <input type="TEXT" name="pw-*fpn*" size="10" value="*pw*"><b><br>
+<font color="Aqua" face="Arial" size="2">*rh*</font></b></td>
+<td align="CENTER">
+ <input type="TEXT" name="em-*fpn*" size="20" value="*em*">
+<br>
+<a href="mailto:*em*"><b><font color="Aqua" face="Arial" size="2">Send mail</font></b></a></td>
+<td align="CENTER"><b>
+ <input type="TEXT" name="stat-*fpn*" size="1" maxlength="1" value="*stat*">
+<br>
+</b></td>
+<td align="CENTER">
+ <input type="TEXT" name="move-*fpn*" size="4" maxlength="4"></td>
+<td align="CENTER">
+ <input type="TEXT" name="tw-*fpn*" size="4" maxlength="4" value="*tw*"></td>
+<td align="CENTER">
+ <input type="TEXT" name="tl-*fpn*" size="4" maxlength="4" value="*tl*"></td>
+<td align="CENTER">
+ <input type="TEXT" name="sw-*fpn*" size="4" maxlength="4" value="*sw*"></td>
+<td align="CENTER">
+ <input type="TEXT" name="sl-*fpn*" size="4" maxlength="4" value="*sl*"></td>
+<td align="CENTER">
+ <input type="TEXT" name="hr-*fpn*" size="4" maxlength="4" value="*hr*"></td>
+</tr>
+</table>
+</center>
+
+<center>
+<hr width="50%">
+</center>
+
+<center>
+<p><b>Email alert enable: yes 
+ <input type="radio" name="emalrt" value="emalrt_yes"> | no 
+ <input type="radio" name="emalrt" value="emalrt_no">
+<br>
+ Change Admin email 
+ <input type="checkbox" name="chem" value="yes">to 
+ <input type="TEXT" name="ema" value="*em*" size="30">
+<br>
+ Change Admin Password 
+ <input type="checkbox" name="chpw" value="yes">to 
+ <input type="PASSWORD" name="napw">
+<br>
+<br>
+ Create backup 
+ <input type="radio" name="brd" value="backup">| Restore from backup 
+ <input type="radio" name="brd" value="restore">
+<br>
+ Clear all stats (retain members) 
+ <input type="radio" name="brd" value="cstat">| Delete all members 
+ <input type="radio" name="brd" value="delete">
+<br>
+ Password for Backup/Restore/Clear stats/Delete: 
+ <input type="PASSWORD" name="brpw" size="15" maxlength="15"></b></p>
+</center>
+
+<center>
+<p><b>
+ <input type="SUBMIT" name="Button" value="Update">
+ <input type="RESET" name="Button" value="Reset">
+ <input type="SUBMIT" name="Button" value="Log Out">
+ <input type="SUBMIT" name="Button" value=
+"Help"></b></p>
+</center>
+
+<center>
+<hr width="50%">
+</center>
+
+<center>
+<p><b>The following is for your "welcome" message.
+<br>
+ <b>Check here 
+ <input type="checkbox" name="udmsg" value="yes">to update your changes.</b>
+<br>
+ Click the above "Update" button when done.
+<br>
+</b></p>
+</center>
+
+<center>
+<table border="0" align="center" width="100%">
+<tr>
+<td align="CENTER"><textarea name="message" cols="53" rows="15">*message*</textarea>
+<br>
+ <input type="hidden" name="login" value="admin">
+ <input type="hidden" name="stamp" value="*stamp*"></td>
+</tr>
+</table>
+</center>
+</form>
+
+<p align="center">&nbsp;</p>
+
+<hr width="50%">
+</body>
+</html>
+

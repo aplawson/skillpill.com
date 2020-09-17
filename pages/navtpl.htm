@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Navigator</title>
+<script language="JavaScript" type="text/javascript">
+<!--
+
+btncnt=24;
+
+var img=new Array();
+for(x=0; x<=btncnt; x++) {
+ img[x]=new Image();
+}
+img[0].src="images/homout.jpg";
+img[1].src="images/welout.jpg";
+img[2].src="images/joiout.jpg";
+img[3].src="images/actout.jpg";
+img[4].src="images/losout.jpg";
+img[5].src="images/shoout.jpg";
+img[6].src="images/srcout.jpg";
+img[7].src="images/admout.jpg";
+img[8].src="images/homovr.jpg";
+img[9].src="images/welovr.jpg";
+img[10].src="images/joiovr.jpg";
+img[11].src="images/actovr.jpg";
+img[12].src="images/losovr.jpg";
+img[13].src="images/shoovr.jpg";
+img[14].src="images/srcovr.jpg";
+img[15].src="images/admovr.jpg";
+img[16].src="images/homon.jpg";
+img[17].src="images/welon.jpg";
+img[18].src="images/joion.jpg";
+img[19].src="images/acton.jpg";
+img[20].src="images/loson.jpg";
+img[21].src="images/shoon.jpg";
+img[22].src="images/srcon.jpg";
+img[23].src="images/admon.jpg";
+
+fohm=0;
+fowe=0;
+fojn=0;
+foac=0;
+folo=0;
+fosh=0;
+fosr=0;
+foad=0;
+
+function alloff() {
+ fohm=0;
+ fowe=0;
+ fojn=0;
+ foac=0;
+ folo=0;
+ fosh=0;
+ fosr=0;
+ foad=0;
+ document.bhome.src=img[0].src;
+ document.bwelcome.src=img[1].src;
+ document.bjoin.src=img[2].src;
+ document.bact.src=img[3].src;
+ document.bloss.src=img[4].src;
+ document.bshow.src=img[5].src;
+ document.bsearch.src=img[6].src;
+ document.badmin.src=img[7].src;
+}
+
+function showhome(state) {
+ if(state == "off") {
+  if(!fohm) {
+   document.bhome.src=img[0].src;
+  }
+ }
+ if(state == "over") {
+  document.bhome.src=img[8].src;
+ }
+ if(state == "on") {
+  alloff();
+  document.bhome.src=img[16].src;
+  fohm=1;
+ }
+}
+
+function showwelcome(state) {
+ if(state == "off") {
+  if(!fowe) {
+   document.bwelcome.src=img[1].src;
+  }
+ }
+ if(state == "over") {
+  if(!fowe) {
+   document.bwelcome.src=img[1+8].src;
+  }
+ }
+ if(state == "on") {
+  alloff();
+  document.bwelcome.src=img[1+16].src;
+  fowe=1;
+ }
+}
+
+function showjoin(state) {
+ if(state == "off") {
+  if(!fojn) {
+   document.bjoin.src=img[2].src;
+  }
+ }
+ if(state == "over") {
+  if(!fojn) {
+   document.bjoin.src=img[2+8].src;
+  }
+ }
+ if(state == "on") {
+  alloff();
+  document.bjoin.src=img[2+16].src;
+  fojn=1;
+ }
+}
+
+function showact(state) {
+ if(state == "off") {
+  if(!foac) {
+   document.bact.src=img[3].src;
+  }
+ }
+ if(state == "over") {
+  if(!foac) {
+   document.bact.src=img[3+8].src;
+  }
+ }
+ if(state == "on") {
+  alloff();
+  document.bact.src=img[3+16].src;
+  foac=1;
+ }
+}
+
+function showloss(state) {
+ if(state == "off") {
+  if(!folo) {
+   document.bloss.src=img[4].src;
+  }
+ }
+ if(state == "over") {
+  if(!folo) {
+   document.bloss.src=img[4+8].src;
+  }
+ }
+ if(state == "on") {
+  alloff();
+  document.bloss.src=img[4+16].src;
+  folo=1;
+ }
+}
+
+function showshow(state) {
+ if(state == "off") {
+  if(!fosh) {
+   document.bshow.src=img[5].src;
+  }
+ }
+ if(state == "over") {
+  if(!fosh) {
+   document.bshow.src=img[5+8].src;
+  }
+ }
+ if(state == "on") {
+  alloff();
+  document.bshow.src=img[5+16].src;
+  fosh=1;
+ }
+}
+
+function showsearch(state) {
+ if(state == "off") {
+  if(!fosr) {
+   document.bsearch.src=img[6].src;
+  }
+ }
+ if(state == "over") {
+  if(!fosr) {
+   document.bsearch.src=img[6+8].src;
+  }
+ }
+ if(state == "on") {
+  alloff();
+  document.bsearch.src=img[6+16].src;
+  fosr=1;
+ }
+}
+
+function showadmin(state) {
+ if(state == "off") {
+  if(!foad) {
+   document.badmin.src=img[7].src;
+  }
+ }
+ if(state == "over") {
+  if(!foad) {
+   document.badmin.src=img[7+8].src;
+  }
+ }
+ if(state == "on") {
+  alloff();
+  document.badmin.src=img[7+16].src;
+  foad=1;
+ }
+}
+
+// -->
+</script>
+</head>
+<body bgcolor="#000000" onload="showwelcome('on')">
+<p align="center">
+
+<a href="*home*" target="_top" 
+onmouseover="showhome('over')" 
+onclick="showhome('on')" 
+onmouseout="showhome('off')"><br>
+<img border="0" src="images/homout.jpg" height="23" width="50" name="bhome"></a> 
+
+<a href="start.htm" target="main" 
+onmouseover="showwelcome('over')" 
+onclick="showwelcome('on')" 
+onmouseout="showwelcome('off')">
+<img border="0" src="images/welout.jpg" height="23" width="74" name="bwelcome"></a> 
+
+<a href="http://*url*?login=reqjoin" target="main" 
+onmouseover="showjoin('over')" 
+onclick="showjoin('on')" 
+onmouseout="showjoin('off')">
+<img border="0" src="images/joiout.jpg" height="23" width="41" name="bjoin"></a> 
+
+<a href="http://*url*?login=reqact" target="main" 
+onmouseover="showact('over')" 
+onclick="showact('on')"
+onmouseout="showact('off')">
+<img border="0" src="images/actout.jpg" height="23" width="67" name="bact"></a> 
+
+<a href="http://*url*?login=updatelog" target="main" onmouseover="showloss('over')" 
+onclick="showloss('on')" 
+onmouseout="showloss('off')">
+<img border="0" src="images/losout.jpg" height="23" width="67" name="bloss"></a> 
+
+<a href="http://*url*?login=showladdr" target="main" onmouseover="showshow('over')"
+onclick="showshow('on')" 
+onmouseout="showshow('off')">
+<img border="0" src="images/shoout.jpg" height="23" width="97" name="bshow"></a> 
+
+<a href="http://*url*?login=search" target="main" 
+onmouseover="showsearch('over')" 
+onclick="showsearch('on')" 
+onmouseout="showsearch('off')">
+<img border="0" src="images/srcout.jpg" height="23" width="292" name="bsearch"></a> 
+
+<a href="http://*url*?login=adminreq" target="main" onmouseover="showadmin('over')" 
+onclick="showadmin('on')" 
+onmouseout="showadmin('off')">
+<img border="0" src="images/admout.jpg" height="23" width="58" name="badmin"></a></p>
+
+<p align="center">&nbsp;</p>
+</body>
+</html>

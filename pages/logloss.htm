@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head><script language="JavaScript" TYPE="text/javascript">
+<!--
+function setup() {
+ document.loss.ln.focus();
+}
+function setname(n) {
+  document.loss.wn.value=n.options[n.selectedIndex].text;
+  n.selectedIndex=0;
+}
+//-->
+</script>
+
+<title>Log Loss</title>
+</head>
+
+<body BGCOLOR="#000000" TEXT="#FFFF00" onload="setup()">
+<!-- START HEADER -->
+<!-- END HEADER -->
+
+<p align="center"><font face="Verdana" color="#FFFFFF"><big><big><big>Game Ladder</big></big></big></font></p>
+
+<p align="center">&nbsp;</p>
+
+<p align="center"><big><font face="Verdana">Report a Match Loss</font></big></p>
+
+<form METHOD="POST" ACTION="http://*url*" NAME="loss">
+  <input type="hidden" name="login" value="logloss"><div align="center"><center><table
+  BORDER="1" CELLPADDING="5" ALIGN="center" WIDTH="352" height="156">
+    <tr>
+      <td BGCOLOR="#000000" align="right" width="132" height="14"><strong><font size="2"
+      face="Verdana" color="#FFFF00">Defeated Player</font></strong></td>
+      <td BGCOLOR="#000000" width="192" height="14"><font face="Verdana" color="#FFFF00"><input
+      TYPE="TEXT" NAME="ln" SIZE="20" MAXLENGTH="20"></font></td>
+    </tr>
+    <tr>
+      <td BGCOLOR="#000000" align="right" width="132" height="41"><strong><font size="2"
+      face="Verdana" color="#FFFF00">Password</font></strong></td>
+      <td BGCOLOR="#000000" width="192" height="41"><font face="Verdana" color="#FFFF00"><input
+      TYPE="PASSWORD" NAME="pw" SIZE="20" MAXLENGTH="20"> </font></td>
+    </tr>
+    <tr>
+      <td BGCOLOR="#000000" align="right" width="132" height="59"><strong><font size="2"
+      face="Verdana" color="#FFFF00">Winner</font></strong></td>
+      <td BGCOLOR="#000000" width="192" height="59"><font face="Verdana" color="#FFFF00"><input
+      TYPE="TEXT" NAME="wn" SIZE="20" MAXLENGTH="20"> <br>
+      *mnsel*</font></td>
+    </tr>
+  </table>
+  </center></div><div align="center"><center><p><font face="Verdana"><font SIZE="2"><b>Comments</b></font><font
+  size="1"> (will be seen on ranks page)</font><br>
+  <textarea COLS="35" NAME="comment" ROWS="3" WRAP="physical"></textarea> </font></p>
+  </center></div><div align="center"><center><p><font face="Verdana"><input TYPE="submit"
+  NAME="Button" VALUE="Better Luck Next Time"> </font></p>
+  </center></div>
+</form>
+<!-- START FOOTER -->
+<!-- END FOOTER -->
+</body>
+</html>
